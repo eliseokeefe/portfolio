@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome</title>
+  <link rel="stylesheet" href="index.css" />
+ <script>
+    window.onload = () => {
+      setTimeout(() => {
+        document.body.classList.add("fade-out");
+        setTimeout(() => {
+          window.location.href = "p.html";
+        }, 800); 
+      }, 2200); 
+    };
+  </script>
+</head>
+<body>
+  <div class="welcome-container">
+   <h1 class="script-font">Elise O'Keefe</h1>
+    <h2>Welcome to my Portfolio</h2>
+  </div>
+</body>
+</html>
+

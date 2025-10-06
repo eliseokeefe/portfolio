@@ -1,0 +1,122 @@
+const data = {
+    "data-analytics": `
+      <h3>Data Analytics</h3>
+      <strong>Skills:</strong> Python, R, Stata, Data Visualization, Data Analysis, Regression Analysis, Hypothesis Testing<br>
+      <strong>Classes:</strong> Empirical Methods, Probability and Statistics for Engineering, Foundations of Biomedical Computing<br>
+      <strong>Projects:</strong>
+      <ul>
+        <li><b>Stata:</b> <a href="https://drive.google.com/drive/folders/1hr93DZAGluuPUBcnNYSYcOdzIjneZ2da?usp=sharing" target="_blank">Impact of Abortion Laws on Infant Mortality Rate</a></li>
+        <li><b>R:</b> <a href="https://docs.google.com/document/d/1SvLHE1ukU6gSkwDqE92MI8T72MmyJ44KVan1snVTT_s/edit?usp=sharing" target="_blank">Graduate School Admission Prediction Model</a></li>
+        <li><b>Python:</b> <a href="https://github.com/eliseokeefe/bmefinal.git" target="_blank">Breast Cancer Diagnosis ML Model</a></li>
+      </ul>
+    `,
+    "algorithms": `
+      <h3>Algorithms</h3>
+      <strong>Skills:</strong> Algorithm Analysis, Optimization, Design<br>
+      <strong>Classes:</strong> Data Structures and Algorithms, Analysis of Algorithms, Cognitive Science<br>
+      <strong>Experience:</strong>
+      <ul>
+        <li>TA: Analysis of Algorithms — Help Desk leader on advanced topics</li>
+        <li><a href="https://github.com/eliseokeefe/bmefinal.git" target="_blank">Python: ML Model for Breast Cancer</a></li>
+      </ul>
+    `,
+    "ai": `
+      <h3>Artificial Intelligence</h3>
+      <p>See projects under Python and Algorithms for relevant AI experience including machine learning and cognitive science coursework.</p>
+    `,
+    "uiux": `
+      <h3>UI/UX Design</h3>
+      <strong>Skills:</strong> Figma, Storyboarding, UX Research, User Testing, JSON, Wireframing, Prototyping, Photoshop<br>
+      <strong>Classes:</strong> Visual Principles of the Screen, Interaction Design, Intro to Human-Centered Design, Web Dev<br>
+      <ul>
+        <li><a href="https://www.figma.com/design/AP8nltM0iZiHRMD5M5VrsB/Project-1---ART236?node-id=1-12" target="_blank">Accessibility of Allergen Information</a></li>
+        <li><a href="https://tinyurl.com/celebrityproductdesign" target="_blank">Celebrity Branding Project</a></li>
+        <li><a href="https://tinyurl.com/art137final" target="_blank">Oz! App Prototype</a></li>
+        <li><a href="https://github.com/CSE256-Fall24/problem-solving-project-team5.git" target="_blank">File Permissions Website</a></li>
+        <li><a href="https://moldybread16.itch.io/mister-information" target="_blank">Mis(ter) Information Game</a></li>
+      </ul>
+    `,
+    "software": `
+      <h3>Software Engineering</h3>
+      <strong>Skills:</strong> Java, C++, Python, HTML/CSS/JS<br>
+      <strong>Classes:</strong> OOP Dev Lab, Programming Techniques, Systems & Languages, Web Dev<br>
+      <ul>
+        <li><a href="https://github.com/emoseswustl/GroupBankingApp.git" target="_blank">Collaborative Bank Assignment</a></li>
+        <li><a href="https://github.com/cse332s-fl24-wustl/oop-work-aamazing_team16-21.git" target="_blank">Abstract File System</a></li>
+        <li><a href="https://www.figma.com/proto/4y7d4jv0xRJtNrNeDjKBtK/Project-Presentations?node-id=30-2" target="_blank">File Permissions Website</a></li>
+        <li><a href="https://github.com/eliseokeefe/bmefinal.git" target="_blank">Breast Cancer Prediction ML Model</a></li>
+      </ul>
+    `,
+    "games": `
+      <h3>Game Development</h3>
+      <strong>Skills:</strong> Godot, Unity, C#, GDScript, Blender, Photoshop<br>
+      <strong>Classes:</strong> Video Game Programming I & II<br>
+      <ul>
+        <li><a href="https://francojschmidt.itch.io/fps-game-really-fun" target="_blank">Those Who Remain</a></li>
+        <li><a href="https://moldybread16.itch.io/mister-information" target="_blank">Mis(ter) Information</a></li>
+      </ul>
+    `,
+    "python": `
+      <h3>Python Projects</h3>
+      <ul>
+        <li><a href="https://github.com/eliseokeefe/bmefinal.git" target="_blank">Breast Cancer Prediction ML Model</a></li>
+      </ul>
+    `,
+    "r": `
+      <h3>R Projects</h3>
+      <ul>
+        <li><a href="https://docs.google.com/document/d/1SvLHE1ukU6gSkwDqE92MI8T72MmyJ44KVan1snVTT_s/edit?usp=sharing" target="_blank">Graduate School Admission Prediction</a></li>
+      </ul>
+    `,
+    "java": `
+      <h3>Java Projects</h3>
+      <ul>
+        <li><a href="https://github.com/emoseswustl/GroupBankingApp.git" target="_blank">Collaborative Bank Assignment</a></li>
+      </ul>
+    `,
+    "cpp": `
+      <h3>C++ Projects</h3>
+      <ul>
+        <li><a href="https://github.com/cse332s-fl24-wustl/oop-work-aamazing_team16-21.git" target="_blank">Abstract File System</a></li>
+      </ul>
+    `,
+    "csharp": `
+      <h3>C# Projects</h3>
+      <ul>
+        <li><a href="https://francojschmidt.itch.io/fps-game-really-fun" target="_blank">Those Who Remain</a></li>
+      </ul>
+    `,
+    "stata": `
+      <h3>Stata Projects</h3>
+      <ul>
+        <li><a href="https://drive.google.com/drive/folders/1hr93DZAGluuPUBcnNYSYcOdzIjneZ2da?usp=sharing" target="_blank">Abortion Laws & Infant Mortality</a></li>
+      </ul>
+    `,
+    "figma": `
+      <h3>Figma Projects</h3>
+      <ul>
+        <li><a href="https://www.figma.com/design/AP8nltM0iZiHRMD5M5VrsB/Project-1---ART236?node-id=1-12" target="_blank">Accessibility of Allergen Info</a></li>
+        <li><a href="https://tinyurl.com/celebrityproductdesign" target="_blank">Celebrity Branding</a></li>
+        <li><a href="https://tinyurl.com/art137final" target="_blank">Oz! App</a></li>
+      </ul>
+    `,
+    "web": `
+      <h3>HTML/CSS/JavaScript Projects</h3>
+      <ul>
+        <li>Portfolio Website</li>
+        <li><a href="https://github.com/CSE256-Fall24/problem-solving-project-team5.git" target="_blank">File Permissions Website</a></li>
+      </ul>
+    `
+  };
+  
+  function filterItems() {
+    const field = document.getElementById("field-filter").value;
+    const lang = document.getElementById("lang-filter").value;
+    let result = "";
+  
+    if (data[field]) result += data[field];
+    if (data[lang] && lang !== field) result += data[lang];
+  
+    document.getElementById("output").innerHTML = result || "<p>Please select a category to view results.</p>";
+  }
+  

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elise O'Keefe Portfolio</title>
+  <link rel="stylesheet" href="p.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="data.html">Data Analysis</a></li>
+      <li><a href="design.html">UI/UX Design</a></li>
+      <li><a href="swe.html">Software Engineering</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      
+    </ul>
+  </nav>
+
+  <header>
+    <div class="header-content">
+      <h1>PORTFOLIO</h1>
+      <h2>Elise O'Keefe</h2>
+      <p>MSc in AI & CS | Northeastern University - London | Class of 2026</p>
+      <p>BS in CS & HCI | WashU in St. Louis | Class of 2025</p>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>Hi, my name is Elise O’Keefe</h2>
+    <p>I’m a....</p>
+    <h2 class="typing-text"></h2>
+  </section>
+
+  <div class="small-description">
+    <p>In May 2025, I received my bachelors degree in Computer Science from the McKelvey School of Engineering at Washington University in St. Louis. Additionally, I completed the coursework for a minor in Human Computer Interaction, a joint program with the Sam Fox School of Design.</p>
+    <br>
+    <p>In September 2025, I began my masters degree in Artificial Intelligence and Computer Science at Northeastern University London with an expected graduation in Summer 2026. I will additionally complete my thesis (UK: dissertation) in this field in Summer 2026.</p>
+    <br>
+    <p>My goal is to utilize this rapidly growing technology in creative implementations, utilizing both my Engineering and Art backgrounds. I focus on building intelligent, optimized systems that prioritize accessibility, usability, and impact.</p>
+  </div>
+  <br>
+
+  <div class="filter">
+    <h2>Filter my Skills, Coursework, & Projects</h2>
+    <p>Use the dropdown below to filter by field or programming language</p>
+
+    <div class="filter-dropdown">
+      <label for="combined-filter">Filter by Category: </label>
+      <select id="combined-filter" onchange="filterItems()">
+        <option value="">Select an option</option>
+        <option value="data-analytics">Data Analytics</option>
+        <option value="algorithms">Algorithms</option>
+        <option value="ai">Artificial Intelligence</option>
+        <option value="uiux">UI/UX Design</option>
+        <option value="software">Software Engineering</option>
+        <option value="games">Game Development</option>
+        <option value="pd">Product Design</option>
+        <option value="python">Python</option>
+        <option value="r">R</option>
+        <option value="java">Java</option>
+        <option value="cpp">C++</option>
+        <option value="csharp">C/C#</option>
+        <option value="stata">Stata</option>
+        <option value="figma">Figma</option>
+        <option value="web">HTML/CSS/JavaScript</option>
+      </select>
+    </div>
+
+    <div id="output">
+      <p>Please select a category to view results.</p>
+    </div>
+    <script>
+      const data = {
+        "data-analytics": `
+          <h3>Data Analytics</h3>
+          <strong>Languages/Softwares:</strong> Python, R/Rstudio, Stata, Excel, Google Analytics, Jupyter, Github<br>
+          <strong>Skills:</strong> Machine Learning, Data Visualization, Data Analysis, Regression Analysis, Hypothesis Testing, Data Cleaning/Preprocessing, A/B Testing, Time Series Analysis <br>
+          <strong>Classes:</strong> Empirical Methods, Probability and Statistics for Engineering, Foundations of Biomedical Computing, Theory and Applications of Data Analytics, Programming for Data Applications<br>
+          <strong>Projects:</strong>
+          <ul>
+            <li><b>Stata:</b> <a href="https://drive.google.com/drive/folders/1hr93DZAGluuPUBcnNYSYcOdzIjneZ2da?usp=sharing" target="_blank">Impact of Abortion Laws on Infant Mortality Rate</a></li>
+            <li><b>R:</b> <a href="https://docs.google.com/document/d/1SvLHE1ukU6gSkwDqE92MI8T72MmyJ44KVan1snVTT_s/edit?usp=sharing" target="_blank">Graduate School Admission Prediction Model</a></li>
+            <li><b>Python:</b> <a href="https://github.com/eliseokeefe/bmefinal.git" target="_blank">Breast Cancer Diagnosis ML Model</a></li>
+          </ul>
+        `,
+        "algorithms": `
+          <h3>Algorithms</h3>
+          <strong>Skills:</strong> Algorithm Analysis, Algorithm Optimization, Algorithm Design, Proof Techniques, Big-O Analysis, Recursion, Graph Algorithms, NP-Completeness/Reductions, Data Structures <br>
+          <ul>
+            <li>TA and Head Help Desk Tutor: CSE347 (Analysis of Algorithms)</li>
+            <li>TA/Grader: CSE247 (Data Structures & Algorithms)</li>
+            <li><a href="https://github.com/eliseokeefe/bmefinal.git" target="_blank">Breast Cancer ML Model (Python)</a></li>
+          </ul>
+        `,
+        "ai": `
+          <h3>Artificial Intelligence</h3>
+          <strong>Classes:</strong> Foundations of Biomedical Computing, AI & Data Ethics, Fundamentals of Computation, Data, & Algorithms, Programming for Data Applications, Theory and Applications of Data Analytics <br>
+           <strong>Experience:</strong> Frontend Developer at AI-based company Litmas.ai; UI/UX Intern at Airy.ai; Data Structures & Algorithms TA; Analysis of Algorithms TA <br>
+           <strong>Degree:</strong> Masters in Artificial Intelligence & Computer Science expected Summer 2026<br> 
+           Thesis expected Summer 2026 <br>
+          <strong>Projects:</strong>
+          <ul>
+            <li><a href="https://www.airyai.app/" target="_blank">Airy - AI App Internship Website</a></li>
+               <li><b>Python:</b> <a href="https://github.com/eliseokeefe/bmefinal.git" target="_blank">Breast Cancer Diagnosis ML Model</a></li>
+          </ul>
+        `,
+        "uiux": `
+          <h3>UI/UX Design</h3>
+          <strong>Skills:</strong> Wireframing, Prototyping, User Research, Usability Testing & User Data, Figma, Photoshop <br>
+          <strong>Classes:</strong> Visual Principles of the Screen, Interaction Design for Health & Wellbeing, Human Centered Design, Cognitive Science, Human Computer Interaction<br>
+          <strong>Experience:</strong> UI/UX Intern at Airy.ai <br>
+          <strong>Projects:</strong>
+          <ul>
+            <li><a href="https://www.figma.com/design/MCQAV9KwFr81tgLMwfx3y9/Design-Portfolio?node-id=430-2&t=jHfBSoOc2dqaLXes-1" target="_blank">Wellness Product Design for Remote Employees at WashU</a></li>
+            <li><a href="https://www.figma.com/design/AP8nltM0iZiHRMD5M5VrsB/Project-1---ART236?node-id=0-1&t=JmBLVzDplycUP0ZU-1" target="_blank">Digital and Analog Product Design for Allergen Information Awareness</a></li>
+            <li><a href="https://www.figma.com/design/4y7d4jv0xRJtNrNeDjKBtK/Project-Presentations?node-id=30-2&t=0jxVCpg0dd7RM0U1-1" target="_blank">Redesigning File Sharing Website through Iterative Research</a></li>
+            <li><a href="https://www.figma.com/design/4y7d4jv0xRJtNrNeDjKBtK/Project-Presentations?node-id=87-2&t=0jxVCpg0dd7RM0U1-1" target="_blank">Creating a Website for a Client: Airy</a></li>
+            <li><a href="https://tinyurl.com/slideshowprocess" target="_blank">Celebrity Website Redesigning and Product Design</a></li>
+            <li><a href=" https://tinyurl.com/art137final" target="_blank">Oz!: App Design and Prototype</a></li>
+           
+          </ul>
+        `,
+        "software": `
+          <h3>Software Engineering</h3>
+          <strong>Classes:</strong> Object Oriented Software Development, Programming Tools & Techniques, Programming Languages & Systems, Web Development<br>
+          <strong>Skills:</strong> Java, C++, C, Python, HTML/CSS/Javascript, Github<br>
+          <strong>Experience:</strong> Frontend Developer at Litmas.ai; Web Development Intern at Airy.ai <br>
+          <strong>Projects:</strong>
+          <ul>
+            <li><a href="https://www.github.com/emoseswustl/GroupBankingApp.git" target="_blank">Banking Software System</a></li>
+             <li><a href="https://docs.google.com/document/d/136h_IBy8BktpQ6i_mg9o0smZGD3r2P6mdPRwNBFviNI/edit?usp=sharing" target="_blank">Abstract File Sharing System</a></li>
+            <li><a href="https://www.figma.com/design/4y7d4jv0xRJtNrNeDjKBtK/Project-Presentations?node-id=30-2&t=0jxVCpg0dd7RM0U1-1" target="_blank">Redesigning File Sharing Website through Iterative Research</a></li>
+          </ul>
+        `,
+        "games": `
+          <h3>Game Development</h3>
+          <strong>Skills:</strong> Unity, Godot, Game Design, C#, 3D Modeling in Blender & OnShape<br>
+          <strong>Projects:</strong>
+          <ul>
+            <li><a href="https://francojschmidt.itch.io/fps-game-really-fun" target="_blank">Unity: 3D Survivor Game</a></li>
+            <li><a href="https://moldybread16.itch.io/mister-information" target="_blank">Godot: 2D Educational Game</a></li>
+          </ul>
+        `,
+        "pd": `
+          <h3>Product Design</h3>
+          <strong>Skills:</strong> Design Thinking, Prototyping, User-Centered Design, User Research, Figma<br>
+          <strong>Projects:</strong>
+          <ul>
+           <li><a href="https://www.figma.com/design/MCQAV9KwFr81tgLMwfx3y9/Design-Portfolio?node-id=430-2&t=jHfBSoOc2dqaLXes-1" target="_blank">Wellness Product Design for Remote Employees at WashU</a></li>
+            <li><a href="https://www.figma.com/design/AP8nltM0iZiHRMD5M5VrsB/Project-1---ART236?node-id=0-1&t=JmBLVzDplycUP0ZU-1" target="_blank">Digital and Analog Product Design for Allergen Information Awareness</a></li>
+            <li><a href="https://tinyurl.com/slideshowprocess" target="_blank">Celebrity Website Redesigning and Product Design</a></li>
+          </ul>
+        `,
+        "python": `
+          <h3>Python</h3>
+          <strong>Skills:</strong> Data Analysis, Machine Learning, Object Oriented Programming<br>
+          <strong>Projects:</strong>
+          <ul>
+               <li><b>Python:</b> <a href="https://github.com/eliseokeefe/bmefinal.git" target="_blank">Breast Cancer Diagnosis ML Model</a></li>
+          </ul>
+        `,
+        "r": `
+          <h3>R</h3>
+          <strong>Skills:</strong> Statistical Analysis, Data Visualization<br>
+          <strong>Projects:</strong>
+          <ul>
+           <li><b>R:</b> <a href="https://docs.google.com/document/d/1SvLHE1ukU6gSkwDqE92MI8T72MmyJ44KVan1snVTT_s/edit?usp=sharing" target="_blank">Graduate School Admission Prediction Model</a></li>
+          </ul>
+        `,
+        "java": `
+          <h3>Java</h3>
+          <strong>Skills:</strong> Object-Oriented Programming, Backend Development<br>
+           <strong>Experience:</strong>Programming Tools & Techniques (Software Developer), Introduction to CS (TA), Data Structures & Algorithms (TA) <br>
+          <strong>Projects:</strong>
+          <ul>
+              <li><a href="https://www.github.com/emoseswustl/GroupBankingApp.git" target="_blank">Banking Software System</a></li>
+          </ul>
+        `,
+        "cpp": `
+          <h3>C++</h3>
+          <strong>Skills:</strong> Object Oriented Programming, Pointers, References, Abstract Objects<br>
+          <strong>Projects:</strong>
+          <ul>
+            <li><a href="https://docs.google.com/document/d/136h_IBy8BktpQ6i_mg9o0smZGD3r2P6mdPRwNBFviNI/edit?usp=sharing" target="_blank">Abstract File Sharing System</a></li>
+          </ul>
+        `,
+        "csharp": `
+          <h3>C/C#</h3>
+          <strong>Skills:</strong> Game Development, Low Level Programming, Arduino <br>
+          <strong>Projects:</strong>
+          <ul>
+             <li><a href="https://francojschmidt.itch.io/fps-game-really-fun" target="_blank">Unity: 3D Survivor Game</a></li>
+          </ul>
+        `,
+        "stata": `
+          <h3>Stata</h3>
+          <strong>Skills:</strong> Statistical Analysis, Data Cleaning<br>
+          <strong>Projects:</strong>
+          <ul>
+            <li><b>Stata:</b> <a href="https://drive.google.com/drive/folders/1hr93DZAGluuPUBcnNYSYcOdzIjneZ2da?usp=sharing" target="_blank">Impact of Abortion Laws on Infant Mortality Rate</a></li>
+          </ul>
+        `,
+        "figma": `
+          <h3>Figma</h3>
+          <strong>Skills:</strong> UI/UX Design, Prototyping<br>
+          <strong>Projects:</strong>
+          <ul>
+            <li><a href="https://www.figma.com/design/MCQAV9KwFr81tgLMwfx3y9/Design-Portfolio?node-id=430-2&t=jHfBSoOc2dqaLXes-1" target="_blank">Wellness Product Design for Remote Employees at WashU</a></li>
+            <li><a href="https://www.figma.com/design/AP8nltM0iZiHRMD5M5VrsB/Project-1---ART236?node-id=0-1&t=JmBLVzDplycUP0ZU-1" target="_blank">Digital and Analog Product Design for Allergen Information Awareness</a></li>
+             <li><a href="https://tinyurl.com/slideshowprocess" target="_blank">Celebrity Website Redesigning and Product Design</a></li>
+             <li><a href=" https://tinyurl.com/art137final" target="_blank">Oz!: App Design and Prototype</a></li>
+             
+          </ul>
+        `,
+        "web": `
+          <h3>HTML/CSS/JavaScript</h3>
+          <strong>Skills:</strong> Frontend Development, Design, API Integration, JavaScript frameworks <br>
+          <strong>Experience:</strong> Frontend Developer at AI-based company Litmas.ai; Software Development TA for CSE237 at WashU <br>
+          <strong>Projects:</strong>
+          <ul>
+           <li> This website! I utilized HTML, CSS, JavaScript, and API Integration </li>
+           <li><a href="https://www.figma.com/design/4y7d4jv0xRJtNrNeDjKBtK/Project-Presentations?node-id=30-2&t=0jxVCpg0dd7RM0U1-1" target="_blank">Redesigning File Sharing Website through Iterative Research</a></li>
+            <li><a href="https://www.figma.com/design/4y7d4jv0xRJtNrNeDjKBtK/Project-Presentations?node-id=87-2&t=0jxVCpg0dd7RM0U1-1" target="_blank">Creating a Website for a Client: Airy</a></li>
+            <li><a href="https://github.com/eliseokeefe/237website.git" target="_blank">Frontend for Interactive CSE237 Course Website</a></li>
+          </ul>
+        `
+      };
+
+      function filterItems() {
+        const category = document.getElementById("combined-filter").value;
+        const result = data[category] || "<p>Please select a category to view results.</p>";
+        document.getElementById("output").innerHTML = result;
+      }
+    </script>
+  </div>
+
+<script src="p.js"></script>
+</body>
+</html>
